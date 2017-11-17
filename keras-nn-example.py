@@ -25,9 +25,6 @@ from sklearn.preprocessing import LabelBinarizer
 root_dir_train = '/Users/michael/winterfell/ml-stuff/data/train'
 root_dir_test = '/Users/michael/winterfell/ml-stuff/data/test'
 
-#root_dir_train = '/Users/michael/Dropbox/Kvasir-dataset-mmsys/performance/files/train'
-#root_dir_test = '/Users/michael/Dropbox/Kvasir-dataset-mmsys/performance/files/validation'
-
 #Reshaping the images durring the loading process
 image_w, image_h = 256,256
 

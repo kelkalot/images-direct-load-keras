@@ -4,7 +4,7 @@ import cv2
 import numpy as np
 
 
-#Main scrip containing the image loading part. In keras-nn-example.py an example of a CNN using images loaded in that way is given.
+#Main script containing the image loading part. In keras-nn-example.py an example of a CNN using images loaded in that way is given.
 
 ####################Root directory containing the images to classify, folder are used as labels
 # train --> cat --> img1, img2...imgN
@@ -14,8 +14,8 @@ import numpy as np
 #       --> dog --> img1, img2...imgN
 
 #sub folders in the root directory respresen classes, for example '/Users/michael/polyps' can contain a /neg/images... and pos/images...
-root_dir_train = '/Users/michael/Dropbox/Kvasir-dataset-mmsys/performance/files/train'
-root_dir_test = '/Users/michael/Dropbox/Kvasir-dataset-mmsys/performance/files/validation'
+root_dir_train = '/Users/michael/dataset/performance/files/train'
+root_dir_test = '/Users/michael/dataset/performance/files/test'
 
 #Reshaping the images durring the loading process
 image_w, image_h = 256,256
@@ -55,6 +55,3 @@ print "Test data and labels loaded"
 x_test, y_test = getimagedataandlabels(root_dir_test,image_w,image_h)
 print x_test.shape
 print y_test.shape
-
-
-
