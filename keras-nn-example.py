@@ -89,7 +89,7 @@ model.compile(loss='categorical_crossentropy',
               metrics=['accuracy'])
 
 model.fit(x_train, Y_train,
-          batch_size=2, nb_epoch=10, verbose=1)
+          batch_size=2, epochd=10, verbose=1)
 
 evaluation = model.evaluate(x_test, Y_test, verbose=0)
 print evaluation
